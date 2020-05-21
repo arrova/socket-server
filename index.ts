@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 // npm install @types/cors --save-dev
 import cors from 'cors';
 
-const server = new Server();
+const server = Server.instance;
 
 // bodyParser
 server.app.use( bodyParser.urlencoded({ extended: true }) );
